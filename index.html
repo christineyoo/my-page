@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- External link to CSS -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://kit.fontawesome.com/147fa46399.js" crossorigin="anonymous"></script>
+    <title>Christine Yoo | Software Developer</title>
+</head>
+
+<body>
+<header>
+ <div class="container flex">
+   <h1 class="logo">Christine Yoo</h1>
+   <nav>
+     <ul>
+       <li><a href="#about" class="btn"><strong>About</strong></a></li>
+       <li><a href="#projects" class="btn"><strong>Projects</strong></a></li>
+       <li><a href="#services" class="btn"><strong>Services</strong></a></li>
+       <li><a href="#contact" class="btn"><strong>Contact</strong></a></li>
+     </ul>
+   </nav>
+ </div> 
+</header>
+
+<main>
+  <!-- Introduction: Briefly describes Christine and location -->
+  <div class="group">
+    <section class="item"></section>
+    <img src="./images/christine.jpg" alt="Picture of Christine Yoo" width="250" class="item" id="photo">
+      <section id="fade-in">
+        <h3><strong>Hello! I'm Christine.</strong></h3>
+        <p>I am a software developer living in Redondo Beach, California. Currently, I am a full-time high school math teacher and a part-time student at <a href="https://www.thinkful.com/" target="_blank"><strong>Thinkful</strong></a> on the Web Developer Track.</p>
+        <p id="intro-text">I am passionate about learning and sharing the joy of learning with others. Whether it's learning mathematics, a new programming concept, or a new cooking technique, it's better when that experience is shared. Thanks for visiting my website! I hope you enjoy your time as you get to know me a bit more. </p>
+      </section>
+    <section class="item"></section>
+  </div>
+
+
+  <!-- About Christine: Includes backstory, other interests, and why coding -->
+  <article id="about">
+      <section>
+        <h3>About Christine</h3>
+        <p><strong>"So how did you get into coding?" Glad you asked!</strong> When the COVID-19 stay-at-home orders came into effect, I found myself with a lot of extra time on my hands. After spending much of that time learning new cooking recipes/techniques, watching YouTube videos about outer space, and exploring the Palos Verdes Peninsula, I decided to learn about web development (thanks to my husband, Kevin, who is also in the field).</p>
+        
+        <p>I began following video tutorials and crash courses on YouTube. When I discovered a bug or struggled to understand a programming concept, I reached out to my "teammate"/partner-in-crime to help me debug the code or understand a concept. Working together was in a way, my first experience working as a team of developers. We would both hit a roadblock, discuss, test, debug, research, try again (and repeat this process <em>x</em> number of times) until we finally understood what was going on under the hood and celebrate!</p>
+
+        <p>This productive struggle is what motivates me to become a better software developer. It's what gets me excited to work with a team of great programmers in the future as well. One of my goals as a developer is to help create a service or product that will benefit people on a large scale. And as a student at <a href="https://www.thinkful.com/" target="_blank"><strong>Thinkful</strong></a>, I've officially begun my journey to do just that.</p>
+      </section>
+      <!-- Pictures of hobbies -->
+      <!-- <div class="fluffy">
+        <img src="./images/fluffy-at-pv.jpg" alt="A picture of a dog outdoors" width="200">
+        <p>Enjoying the views at San Vicente with Fluffy</p>
+      </div> -->
+        
+      <hr>
+
+      <!-- Favorite Quote -->
+      <!-- Jan. 8: figure out how to put the quote on the bottom -->
+      <section id="horizontal">
+        <p class="quote"><em>"When you have confidence, you can have a lot of fun. And when you have fun, you can do amazing things."</em></p>
+        <p class="quote"><em>- Joe Namath-</em></p>
+      </section>
+  </article>
+
+  <!-- ********************* My Projects ********************* -->
+  
+  <h3 id="projects">Christine's Projects</h3>
+      <!-- Project #1 -->
+  <article>
+    <section>
+      <h4><a href="https://christineyoo.github.io/wordbeater/" target="_blank"><ins>Word Beater App</ins></a></h4>
+            <p><strong>Project purpose & audience: </strong>Given a random word and time limit, the user must accurately type the word in the time given to earn points. If the user is unable to type the exact word in the given time, the score is reset to zero and the user can try again by typing the next provided word. This app is for anyone who would like to play a speed typing game to practice typing accurately.</p>
+            
+            <p><strong>How it was built: </strong>This project was built using the setInterval method, callback functions, if/else statements, an array of strings, and Math methods to generate a random word. I also added two new features: a drop-down menu to select the level and a "Try Again" button to reset the game. These extra features were added using query selectors, event listeners, and DOM manipulation. In the process of building this app, I gained a deeper understanding of how conditional statements and HTML DOM manipulation can work together to render a dynamic user experience. Overall, I learned how JavaScript can bring greater interactivity to a website as opposed to just HTML and CSS.</p>
+            <p><strong>Languages used:</strong> HTML, CSS (Bootstrap), JavaScript</p>
+            <p><strong>GitHub: </strong><a href="https://github.com/christineyoo/wordbeater" target="_blank">Code for Word Beater App</a></p>
+    </section>
+  </article>
+  <div class="project">
+    <img src="./images/wordbeater-app.jpg" alt="Picture of Word Beater App" width="350">
+  </div>
+
+
+      <!-- Project #2 -->
+  <article>
+    <section>
+      <h4><a href="https://christineyoo.github.io/cookingcorner/" target="_blank"><ins>Elegant Blur Landing Page</ins></a></h4>
+            <p><strong>Project purpose & audience:</strong> The purpose of this mini project is to create a responsive, elegant opening web page with a blurring effect. When the page is loaded, the background image is blurred and the opening text is clearly shown. When the user hovers over the text, the background image is clarified and the text is blurred. This feature is for anyone who would like to create a visually appealing landing page for their website using this effect.</p>
+            
+            <p><strong>How it was built: </strong>This project was built using the grid system, media queries, transitions, and pseudo-elements. I also added a personal touch by calling it "Christine's Cooking Corner," a fictional website to take courses in cooking. In the process of building this app, I learned more about CSS dynamic properties and responsive styling techiques using media queries.</p>
+            <p><strong>Languages used:</strong> HTML, CSS</p>
+            <p><strong>GitHub: </strong><a href="https://github.com/christineyoo/cookingcorner" target="_blank">Code for Elegant Blur Landing Page</a></p>
+    </section>
+  </article> 
+  <div class="project">
+    <img src="./images/christines-cooking-corner.gif" alt="GIF of Elegant Background App" width="350">
+  </div>
+
+  <!--****************** Services **************************-->
+  <article id="services">
+    <section>
+      <h3>Christine's Services</h3>
+      <h4><i class="fab fa-html5"></i>&nbsp;HTML</h4> 
+      <h4><i class="fab fa-css3-alt"></i>&nbsp;CSS</h4>
+      <h4><i class="fab fa-js-square"></i>&nbsp;JavaScript</h4>
+        <p>Able to create HTML and CSS pages from scratch using flexbox, media queries for responsive design, and semantic markup.</p>
+        <p>Able to use vanilla JavaScript and DOM manipulation to create dynamic user experiences.</p>
+        <br>
+        <hr>
+        <br>
+      <h4><i class="fab fa-git-alt"></i>&nbsp;Git (Currently Developing)</h4>
+      <p>Able to showcase a public web project on GitHub.com.</p>
+      <p>Currently learning how to use Git command line for creating snapshots, accessing browsing history, branching & merging, and rewriting history.</p>
+        <br>
+        <hr>
+        <br>
+      <h4><i class="fas fa-layer-group"></i>&nbsp;MERN Stack (Currently Developing)</h4>
+      <p>Currently learning to use React to build a fictional movie rental application that includes composed components, pagination, filtering, sorting, routing, forms, and calling backend services.</p>
+      <p>Built a project with basic CRUD operations using the express-router library.</p>
+    </section>
+</article>
+
+
+  <!-- Contact Christine: Includes links to email, LinkedIn, and GitHub -->
+  <h3 id="contact">Contact Christine</h3>
+  <article>
+    <section>
+      <h4>Let's connect</h4>
+      <p>If you're looking to hire a new developer or just want to chat, it would be great to hear from you. Please feel free to contact or follow me.</p>
+          
+      <!-- Form -->
+      <form action="https://formspree.io/f/xdopyaql" method="POST">
+        <label for="name">Name: </label>
+        <input id="name" type="text" name="name" required>
+        <br>
+        <label for="email">Email: </label>
+        <input id="email" type="text" name="email" required>
+        <br>
+        <label for="message">Your message: </label>
+        <textarea name="message" id="message" required></textarea>
+        <br>
+        <button type="submit"><strong>Submit</strong></button>
+      </form>
+    </section>
+  </article>
+    <!-- Google Map feature -->
+    <div id="map"></div>
+</main>
+
+<!-- Footer -->
+<footer class="footer-style">
+  <div class="container">
+    <h4 id="footer-font">Copyright &copy; 2021 Christine Yoo</h4>
+    <ul id="footer-menu">
+      <li><i class="far fa-envelope"></i><a href="mailto:tstudent205@gmail.com">&nbsp;&nbsp;<strong>Email</strong></a></li>
+      <li><i class="fab fa-linkedin-in"></i><a href="https://www.linkedin.com/in/christine-yoo-cy/" target="_blank">&nbsp;<strong> LinkedIn</strong></a></li>
+      <li><i class="fab fa-github"></i><a href="https://github.com/christineyoo" target="_blank">&nbsp;<strong> GitHub</strong></a></li>
+    </ul>
+  </div>
+</footer>
+
+
+<!-- Wiring up to JavaScript -->
+<script src = "main.js"></script>
+<!-- Google Maps API -->
+<script
+    async
+    defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBCdo82fr1EGCM8YJT12zVwpwNNg9gSkxk&callback=initMap"></script>
+</body>
+</html>

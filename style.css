@@ -1,0 +1,554 @@
+/* Enables use of Google Font style */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
+
+/* Global styling */
+* {
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+/* Gradient background using uiGradients */
+body {
+  background: #f3904f; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #3b4371,
+    #f3904f
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #3b4371,
+    #f3904f
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  margin: 0;
+  background-size: cover;
+}
+
+body {
+  background: #7f7fd5; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #91eae4,
+    #86a8e7,
+    #7f7fd5
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #91eae4,
+    #86a8e7,
+    #7f7fd5
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+/* Fading in effect */
+#fade-in {
+  -webkit-animation: fadein 4s; /* Safari, Chrome and Opera > 12.1 */
+  -moz-animation: fadein 4s; /* Firefox < 16 */
+  -ms-animation: fadein 4s; /* Internet Explorer */
+  -o-animation: fadein 4s; /* Opera < 12.1 */
+  animation: fadein 4s;
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Internet Explorer */
+@-ms-keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Opera < 12.1 */
+@-o-keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* ///////////////////////////////////////////////////////////// */
+/* Center aligns all text and provides margin from the edge of the browser */
+header .flex {
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 10%;
+}
+
+.flex {
+  display: flex;
+  flex-direction: column;
+  padding: 10%;
+  height: 100%;
+}
+
+header ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+
+.logo h1 {
+  font-size: 30px;
+  text-align: center;
+}
+
+header nav ul li {
+  margin: 0 auto;
+}
+
+main,
+footer {
+  text-align: left;
+}
+
+hr {
+  margin: 0 1%;
+}
+
+/* Targets only the images in the main container */
+main {
+  margin: 0%;
+}
+
+figure, figure img {
+  /* border: 2px solid red; */
+  width: 80%;
+  height: auto;
+}
+
+/* Creates a circle image */
+#photo {
+  border-radius: 50%;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 10px;
+}
+
+/* Aligns list items to the left */
+.list-center {
+  list-style-type: none;
+}
+
+.list-left {
+  text-align: left;
+}
+
+/* Creates each "white box" and margin around each box */
+article {
+  background-color: white;
+  border-radius: 20px;
+  margin: 10px;
+  padding: 20px;
+}
+
+/* Creates space between the edge of each white box and the text it contains */
+section {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.fluffy {
+  margin-left: auto;
+  margin-right: auto;
+  /* border: 1px solid blue; */
+  padding: 10%;
+  text-align: center;
+}
+
+.fluffy img {
+  width: 100%;
+  height: auto;
+}
+
+.quote {
+  text-align: center;
+}
+
+#projects {
+  margin: 20% 0 6% 12%;
+}
+
+.project img {
+  width: 95%;
+  height: auto;
+  margin: 0 auto;
+  display: flex;
+  /* flex-direction: column; */
+  /* justify-content: center; */
+}
+
+/* Setting font sizes for different text elements */
+p,
+ol,
+ul {
+  font-size: 16px;
+}
+
+h3 {
+  font-size: 30px;
+}
+
+h4 {
+  font-size: 20px;
+}
+
+/* Pseudoclasses for anchor tags */
+a:link {
+  color: #000;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #1a2a6c;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #ffd200;
+  text-decoration: none;
+}
+
+/* Button styling in navigation */
+.btn {
+  display: inline-block;
+  border: 1px solid #000;
+  border-radius: 6px;
+  padding: 6px 12px;
+  text-decoration: none;
+  margin: 10px;
+}
+
+/* FlexBox */
+.group {
+  display: flex;
+  flex-direction: column;
+  /* Do not change these margins */
+  /* margin: 10px 40px; */
+}
+
+#group-services {
+  margin-top: 130px;
+}
+
+.item {
+  flex: 1;
+}
+
+.item-double {
+  flex: 2;
+}
+
+article section ul li {
+  font-size: 18px;
+}
+
+#services {
+  margin-top: 20%;
+}
+
+#services li{
+  list-style-type: none;
+  padding: 7px;
+}
+
+#services h4 {
+  padding: 0;
+  margin: 0;
+
+}
+
+#contact {
+  margin: 20% 0 6% 12%;
+}
+
+/* Styling for form */
+form label {
+  display: block;
+  font-size: 18px;
+  text-align: left;
+}
+
+form input {
+  margin-bottom: 20px;
+  width: 70%;
+}
+
+form textarea {
+  margin-bottom: 20px;
+  width: 100%;
+  height: 10rem;
+}
+
+form button {
+  border: 1px solid #000;
+  border-radius: 10%;
+  font-size: 16px;
+  padding: 5px;
+}
+/* Adjusts dimensions and position of Google Map */
+#map {
+  height: 400px;
+  width: 75%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Styling for the footer */
+.footer-style {
+  border: 2px solid black;
+  margin: 50% 1% 1% 1%;
+  border-radius: 5px;
+  text-align: center;
+}
+
+footer ul {
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+  padding: 1%
+}
+
+#footer-font {
+  padding-top: 1%;
+  font-size: 12px;
+}
+
+/* MEDIA QUERY//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+/* For desktops and screens greater than 800px */
+@media all and (min-width: 800px) {
+  /* Formatting for the header */
+  header {
+    border-bottom: 1.5px solid #000;
+    margin-bottom: 5%;
+  }
+
+  header ul {
+   display: flex;
+   list-style-type: none;
+   padding: 10px;
+   margin: 0 5px;
+  }
+
+  header .flex {
+    justify-content: space-between;
+  }
+
+  .container {
+    max-width: 2000px;
+    margin: 0 auto;
+    padding: 0 40px;
+  }
+
+  .flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+  /* //////////////////////////// */
+
+  main {
+    /* text-align: left; */
+    margin: 0 10%;
+    /* border: 2px solid red; */
+  }
+
+  figure {
+    max-width: 1500px;
+    width: 50%;
+    height: auto;
+  }
+
+  .footer-style {
+    margin: 400px 0 10px 0;
+  }
+
+  hr {
+    margin: 0 200px;
+  }
+
+  .group {
+    display: flex;
+    flex-direction: row;
+    margin: 10px;
+    justify-content: center;
+  }
+
+  #about {
+    /* display: flex; */
+    /* flex-direction: row; */
+  }
+
+  .quote {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .fluffy {
+    border: 2px solid blue;
+  }
+
+  .item {
+    flex: 1;
+    margin: 0;
+    /* align-self property keeps profile image from stretching */
+    align-self: center;
+  }
+
+  .item-double {
+    flex: 2;
+    margin: 10px;
+  }
+
+  #photo {
+    border-radius: 50%;
+  }
+
+  /*KEEP! This keeps the last name from going under the first name */
+  h1 {
+    font-size: 40px;
+  }
+
+  h2 {
+    font-size: 40px;
+  }
+
+  h3 #contact {
+    text-align: left;
+  }
+
+  h4 {
+    font-size: 25px;
+    text-align: left;
+  }
+
+  .row {
+    display: flex;
+    flex-direction: row;
+  }
+
+  #projects{
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 20%;
+      margin-bottom: 6%;
+  }
+
+  #services-padding ul li {
+    list-style-type: none;
+  }
+
+  #services-padding h4 {
+    padding: 10px;
+  }
+
+  .spacing {
+    padding: 7px;
+  }
+
+ .project img {
+    width: 75%;
+    height: auto;
+    margin: 0 auto;
+    /* display: flex; */
+    /* flex-direction: column; */
+    /* justify-content: center; */
+  }
+
+  .project-blurb {
+    width: 50%;
+  }
+
+  .services-images {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+  }
+
+  #contact {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20%;
+    margin-bottom: 6%;
+  }
+
+  form input {
+    margin-bottom: 20px;
+    width: 40%;
+  }
+  
+  form textarea {
+    margin-bottom: 20px;
+    width: 80%;
+    height: 10rem;
+  }
+
+  #map {
+    margin-top: 5%;
+    height: 500px;
+    width: 45%;
+  }
+
+  footer h4 {
+    font-size: 14px;
+    margin: 0;
+    padding: 0;
+  }
+
+  /* Styling for the footer */
+  .footer-style {
+    border: 2px solid #000;
+    margin: 50px 10px 10px 10px;
+    border-radius: 5px;
+  }
+
+  #footer-menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+  }
+}
